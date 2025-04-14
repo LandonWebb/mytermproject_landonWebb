@@ -1,12 +1,13 @@
 const express = require('express');
 const app = express();
-const users = require('./routes/users');
-const albums = require('./routes/albums');
-const reviews = require('./routes/reviews');
+
+const usersRoutes = require('./routes/users');
+const albumsRoutes = require('./routes/albums');
+const reviewsRoutes = require('./routes/reviews');
 
 app.use(express.json());
-app.use('/api/users', users);
-app.use('/api/albums', albums);
-app.use('/api/reviews', reviews);
+app.use('/api/users', usersRoutes);
+app.use('/api/albums', albumsRoutes);
+app.use('/api/reviews', reviewsRoutes);
 
 module.exports = app;
