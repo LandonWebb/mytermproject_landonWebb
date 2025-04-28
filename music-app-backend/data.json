@@ -1,0 +1,37 @@
+{
+    "users": [
+      {
+        "id": 1,
+        "name": "John Doe",
+        "email": "johndoe@example.com",
+        "password": "hashedpassword123"
+      },
+      {
+        "id": 2,
+        "name": "Jane Smith",
+        "email": "janesmith@example.com",
+        "password": "hashedpassword456"
+      }
+    ],
+    "albums": [
+      {
+        "id": 1,
+        "title": "Album One",
+        "artist": "Artist One",
+        "releaseYear": 2020,
+        "songs": [
+          {
+            "id": 1,
+            "title": "Song One",
+            "duration": "3:30"
+          },
+          {
+            "id": 2,
+            "title": "Song Two",
+            "duration": "4:00"
+          }
+        ]
+      }
+    ]
+  }
+  

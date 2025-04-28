@@ -1,7 +1,7 @@
 const express = require('express');
 const app = express();
 
-const authenticateToken = require('./middleware/auth'); 
+const authenticateToken = require('./music-app-backend/middleware/auth'); 
 
 const usersRoutes = require('./routes/users');
 const albumsRoutes = require('./routes/albums');
