@@ -1,5 +1,5 @@
-import request from 'supertest';
-import app from '../../app.js'; // Adjust path if needed
+const request = require('supertest');
+const app = require('../app');
 
 describe('User API Endpoints', () => {
   const testUser = {

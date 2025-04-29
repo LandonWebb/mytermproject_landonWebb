@@ -1,5 +1,5 @@
-import request from 'supertest';
-import app from '../../app.js';
+const request = require('supertest');
+const app = require('../app.js'); 
 
 describe('Auth Routes', () => {
   let testEmail = `testuser_${Date.now()}@example.com`;

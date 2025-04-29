@@ -1,5 +1,5 @@
 const request = require('supertest');
-const app = require('../../app'); // Corrected import
+const app = require('../app'); // Corrected import
 
 describe('Login Routes', () => {
   let testEmail = `loginuser_${Date.now()}@example.com`;

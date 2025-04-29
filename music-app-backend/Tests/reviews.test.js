@@ -1,5 +1,5 @@
 const request = require('supertest');
-const app = require('../../app');
+const app = require('../app');
 
 describe('GET /api/reviews', () => {
   it('should return all reviews', async () => {
