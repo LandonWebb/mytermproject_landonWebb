@@ -5,7 +5,7 @@ const authenticateToken = require('./middleware/auth');
 const usersRoutes = require('./routes/users');
 const albumsRoutes = require('./routes/albums');
 const reviewsRoutes = require('./routes/reviews');
-
+require('./db');
 // Middleware first
 app.use(express.json());
 
