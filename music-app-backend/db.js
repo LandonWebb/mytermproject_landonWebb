@@ -13,6 +13,9 @@ const db = new sqlite3.Database('./dev.sqlite3', (err) => {
 db.serialize(() => {
   console.log("Creating tables...");
 
+  // Drop the reviews table if it exists (to ensure it's recreated properly)
+  db.run("DROP TABLE IF EXISTS reviews");
+
   // Albums table
   db.run(`
     CREATE TABLE IF NOT EXISTS albums (
